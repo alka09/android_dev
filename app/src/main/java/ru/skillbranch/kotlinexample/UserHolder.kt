@@ -1,7 +1,5 @@
 package ru.skillbranch.kotlinexample
 
-//UserHolder
-
 object UserHolder {
     private var map = mutableMapOf<String, User>()
 
@@ -33,7 +31,6 @@ object UserHolder {
                             map[user.login] = user
                         }
                     }
-
                 }
         } else {
             throw IllegalArgumentException("Enter a valid phone number starting with a + and containing 11 digits")
